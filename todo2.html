@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="todo2.css">
+    <title>Todo2</title>
+</head>
+
+<body>
+    <div class="d-flex w-100 p-3 mb-5 shadow justify-content-center">
+        <h1>Todo List</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <input class="me-3 inputArea" type="textbox" placeholder="Enter your task here" id="Text">
+        <button class="pt-3 pb-3 p-3 shadow rounded-circle" onclick=add()>Add</button>
+    </div>
+    <div class="mt-3 mb-4 d-flex text-center flex-column tasksArea" id="TaskContainer">
+
+    </div>
+    
+    <div class="d-flex justify-content-center mt-2 action-buttons">
+        <button class="p-2 ms-3 me-3" id="AllTask">All Tasks</button>
+        <button class="p-2 me-3" id="Active">Show Active</button>
+        <button class="p-2 me-3" id="Completed">Show Completed</button>
+        <button class="p-2 me-3" id="Deleted">Show Deleted</button>
+        <button class="p-2 me-3" id="Reset">Reset all</button>
+    </div>
+
+
+    <script src="todo2.js"></script>
+</body>
+
+</html>
